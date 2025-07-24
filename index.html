@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Light House Institute - Official</title>
+<!-- Tailwind CSS CDN for modern styling -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Animate.css for subtle animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<style>
+  /* Custom scrollbar for gallery slider */
+  .gallery-slider::-webkit-scrollbar {
+    height: 8px;
+  }
+  .gallery-slider::-webkit-scrollbar-thumb {
+    background-color: #0c4a6e;
+    border-radius: 100px;
+  }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+
+<!-- NAVBAR -->
+<header class="bg-white shadow-md sticky top-0 z-50">
+  <div class="container mx-auto px-6 lg:px-10 flex items-center justify-between h-16">
+    <a href="#" class="flex items-center space-x-3 focus:outline-none focus:ring-2 focus:ring-blue-600" aria-label="Light House Institute home">
+           <span class="text-2xl font-semibold text-blue-900 select-none">Light House Institute</span>
+    </a>
+    <nav class="hidden md:flex space-x-8 text-sm font-medium">
+      <a href="#about" class="hover:text-blue-700 focus:outline-none focus:text-blue-700 focus:ring-2 focus:ring-blue-600 rounded" tabindex="0">About Us</a>
+      <a href="#admissions" class="hover:text-blue-700 focus:outline-none focus:text-blue-700 focus:ring-2 focus:ring-blue-600 rounded" tabindex="0">Admissions</a>
+      <a href="#online-library" class="hover:text-blue-700 focus:outline-none focus:text-blue-700 focus:ring-2 focus:ring-blue-600 rounded" tabindex="0">Online Library</a>
+      <a href="#gallery" class="hover:text-blue-700 focus:outline-none focus:text-blue-700 focus:ring-2 focus:ring-blue-600 rounded" tabindex="0">Gallery</a>
+      <a href="#portals" class="hover:text-blue-700 focus:outline-none focus:text-blue-700 focus:ring-2 focus:ring-blue-600 rounded" tabindex="0">Portals</a>
+      <a href="#contact" class="hover:text-blue-700 focus:outline-none focus:text-blue-700 focus:ring-2 focus:ring-blue-600 rounded" tabindex="0">Contact</a>
+    </nav>
+    <button id="menuBtn" aria-label="Toggle menu" aria-expanded="false" class="md:hidden text-blue-900 focus:outline-none focus:ring-2 focus:ring-blue-600 rounded">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16"></path>
+      </svg>
+    </button>
+  </div>
+  <!-- Mobile Menu -->
+  <nav id="mobileMenu" class="hidden md:hidden bg-white shadow-lg border-t border-gray-200">
+    <div class="flex flex-col space-y-1 p-4 text-gray-700 text-base font-medium">
+      <a href="#about" class="hover:bg-blue-50 rounded px-3 py-2 focus:outline-none focus:bg-blue-200" tabindex="0">About Us</a>
+      <a href="#admissions" class="hover:bg-blue-50 rounded px-3 py-2 focus:outline-none focus:bg-blue-200" tabindex="0">Admissions</a>
+      <a href="#online-library" class="hover:bg-blue-50 rounded px-3 py-2 focus:outline-none focus:bg-blue-200" tabindex="0">Online Library</a>
+      <a href="#gallery" class="hover:bg-blue-50 rounded px-3 py-2 focus:outline-none focus:bg-blue-200" tabindex="0">Gallery</a>
+      <a href="#portals" class="hover:bg-blue-50 rounded px-3 py-2 focus:outline-none focus:bg-blue-200" tabindex="0">Portals</a>
+      <a href="#contact" class="hover:bg-blue-50 rounded px-3 py-2 focus:outline-none focus:bg-blue-200" tabindex="0">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section class="relative bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+  <div class="container mx-auto px-6 py-24 flex flex-col md:flex-row md:items-center md:justify-between">
+    <div class="md:w-1/2 animate__animated animate__fadeInLeft">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">Shaping Leaders for Tomorrow</h1>
+      <p class="mb-8 max-w-lg text-lg opacity-90">At Light House Institute, we combine excellence in education with innovation and community values to empower every student.</p>
+      <a href="#admissions" class="inline-block bg-yellow-500 hover:bg-yellow-400 focus:ring-4 focus:ring-yellow-300 text-blue-900 font-semibold px-8 py-3 rounded shadow transition">Apply For Admission Now</a>
+    </div>
+    <div class="md:w-1/2 mt-12 md:mt-0 animate__animated animate__fadeInRight">
+      <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80" alt="Modern school campus aerial shot" class="rounded-lg shadow-lg max-w-full object-cover max-h-96 mx-auto" />
+    </div>
+  </div>
+</section>
+
+<main class="container mx-auto px-6 md:px-10 space-y-20 mt-20">
+ 
+
+  <section id="about" aria-label="About Light House Institute" class="py-12 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-blue-900 mb-6 border-b-4 border-yellow-400 inline-block pb-1">About Us</h2>
+    <p class="max-w-4xl text-lg leading-relaxed text-gray-700 mb-4">
+      Light House Institute is a registered ZIMSEC and Cambridge examination center, proudly serving the Zimbabwean community since 1985.
+      Located in Unit J, Zengeza, Chitungwiza, we provide excellent education opportunities structured around the locally and internationally recognized curricula.
+    </p>
+    <p class="max-w-4xl text-lg leading-relaxed text-gray-700 mb-4">
+      Our accredited programs include primary and secondary education, delivered by experienced and dedicated faculty committed to nurturing academic excellence, integrity, and community engagement.
+      We offer comprehensive assessments, preparing students for both ZIMSEC and Cambridge examinations.
+    </p>
+    <img src="https://mts1.google.com/vt/lyrs=m@206000000&hl=en&src=app&x=9605&y=9025&z=14&s=Ga" alt="Map of Zimbabwe with Chitungwiza highlighted" class="rounded-lg shadow-lg mt-6 max-w-4xl mx-auto" />
+  </div>
+</section>
+<section id="about-website" aria-label="About This Website" class="py-14 bg-gradient-to-r from-blue-900 via-blue-700 to-blue-900 text-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-5xl font-extrabold mb-10 border-b-4 border-yellow-400 inline-block pb-3">
+      About This Website
+    </h2>
+
+    <p class="text-2xl max-w-3xl mx-auto mb-12 leading-relaxed font-light">
+      This website is a purpose-built prototype created exclusively for <strong>Light House Institute</strong> by <em>Droom Dazlean Solutions</em>. 
+     The website encoporates crucial features that empower students, parents, staff, and the entire school community.
+    </p>
+
+    <img 
+      src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=900&q=80" 
+      alt="Modern digital school technology" 
+      class="rounded-xl mx-auto mb-14 shadow-2xl max-w-5xl object-cover" 
+      loading="lazy"
+    />
+
+    <h3 class="text-4xl font-semibold mb-10 border-b-2 border-yellow-400 inline-block pb-2">
+      15 Key Functionalities for Light House Institute
+    </h3>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto text-left text-white text-lg font-medium list-disc list-inside">
+      <li><strong>Student Portal:</strong> Secure personalized access to grades, attendance, assignments, and learning resources.</li>
+      <li><strong>Parent Portal:</strong> Transparent communication hub for reports, announcements, and fee status updates.</li>
+      <li><strong>Online Admissions:</strong> Easy-to-use application forms with validation and program selection.</li>
+      <li><strong>Academic Programs:</strong> Detailed curriculum outlines for primary and secondary ZIMSEC and Cambridge syllabi.</li>
+      <li><strong>Calendar of Events:</strong> Interactive schedule featuring school events, holidays, sports, and cultural activities.</li>
+      <li><strong>Staff Directory:</strong> Comprehensive listing of faculty and departments with contact information.</li>
+      <li><strong>News & Announcements:</strong> Real-time updates, newsletters, and blogs to keep the community informed.</li>
+      <li><strong>Multimedia Gallery:</strong> Photos, videos, and virtual tours showcasing school life and achievements.</li>
+      <li><strong>School Marketing:</strong> Engaging content that communicates the school’s values and attracts prospective families.</li>
+      <li><strong>Accessibility Features:</strong> Inclusivity via screen reader compatibility, high-contrast modes, and adjustable text size.</li>
+      <li><strong>Responsive Design:</strong> Mobile-friendly interface ensuring seamless browsing on any device.</li>
+      <li><strong>Secure Staff Portal:</strong> Dedicated access for teachers and administrators to manage academic and administrative tasks.</li>
+      <li><strong>Communication Tools:</strong> Parent-teacher messaging, event reminders, and bulletin boards for enhanced engagement.</li>
+      <li><strong>Technical Reliability:</strong> SSL encryption, fast loading speeds, and regular updates for safety and performance.</li>
+      <li><strong>Data Privacy Compliance:</strong> Protects user data and meets regulatory standards for online security.</li>
+    </ul>
+
+    <h3 class="text-4xl font-semibold my-14 border-b-2 border-yellow-400 inline-block pb-2">
+     Light House Chitungwiza Institute Website 
+    </h3>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-4xl mx-auto text-white text-xl font-semibold list-none">
+      <li class="flex items-start space-x-4">
+        <img src="https://img.icons8.com/color/48/000000/checkmark--v1.png" alt="Checkmark icon" class="flex-shrink-0 mt-1" />
+        <span>Enhances the school’s reputation through professional online presence and transparent information.</span>
+      </li>
+      <li class="flex items-start space-x-4">
+        <img src="https://img.icons8.com/color/48/000000/checkmark--v1.png" alt="Checkmark icon" class="flex-shrink-0 mt-1" />
+        <span>Improves engagement and satisfaction of students, parents, and staff with easy access to vital resources.</span>
+      </li>
+      <li class="flex items-start space-x-4">
+        <img src="https://img.icons8.com/color/48/000000/checkmark--v1.png" alt="Checkmark icon" class="flex-shrink-0 mt-1" />
+        <span>Streamlines administrative processes such as admissions and communications, saving time and effort.</span>
+      </li>
+      <li class="flex items-start space-x-4">
+        <img src="https://img.icons8.com/color/48/000000/checkmark--v1.png" alt="Checkmark icon" class="flex-shrink-0 mt-1" />
+        <span>Supports better academic outcomes through accessible curricula and student performance tracking.</span>
+      </li>
+      <li class="flex items-start space-x-4">
+        <img src="https://img.icons8.com/color/48/000000/checkmark--v1.png" alt="Checkmark icon" class="flex-shrink-0 mt-1" />
+        <span>Promotes school culture and pride by showcasing events, student work, and achievements with multimedia.</span>
+      </li>
+      <li class="flex items-start space-x-4">
+        <img src="https://img.icons8.com/color/48/000000/checkmark--v1.png" alt="Checkmark icon" class="flex-shrink-0 mt-1" />
+        <span>Ensures inclusivity and equal access with built-in accessibility features for diverse users.</span>
+      </li>
+      <li class="flex items-start space-x-4">
+        <img src="https://img.icons8.com/color/48/000000/checkmark--v1.png" alt="Checkmark icon" class="flex-shrink-0 mt-1" />
+        <span>Attracts new students and partners through professional marketing and an engaging digital footprint.</span>
+      </li>
+      <li class="flex items-start space-x-4">
+        <img src="https://img.icons8.com/color/48/000000/checkmark--v1.png" alt="Checkmark icon" class="flex-shrink-0 mt-1" />
+        <span>Provides peace of mind with secure data handling and privacy compliance.</span>
+      </li>
+    </ul>
+
+    <img 
+      src="https://images.unsplash.com/photo-1517816428104-9d3d3236180b?auto=format&fit=crop&w=900&q=80" 
+      alt="Students collaborating with technology" 
+      class="rounded-xl mx-auto shadow-2xl max-w-5xl object-cover mt-14" 
+      loading="lazy"
+    />
+  </div>
+</section>
+
+
+<section id="academics" aria-label="Academic Programs and Curriculum" class="py-12 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-blue-900 mb-6 border-b-4 border-yellow-400 inline-block pb-1">Academic Programs and Curriculum</h2>
+
+    <p class="max-w-4xl text-lg leading-relaxed text-gray-700 mb-8">
+      At Light House Institute, we offer a comprehensive curriculum carefully aligned with Zimbabwe’s ZIMSEC syllabus as well as Cambridge International programs. Our academic programs are designed to foster critical thinking, creativity, and a passion for learning at all levels.
+    </p>
+
+    <!-- Primary School Subjects -->
+    <h3 class="text-2xl font-semibold text-blue-800 mb-4">Primary School (Grades 1-7)</h3>
+    <p class="mb-6 max-w-4xl text-gray-700">
+      Our primary curriculum covers foundational subjects laid out by ZIMSEC:
+    </p>
+    <ul class="list-disc list-inside max-w-4xl mb-8 text-gray-700">
+      <li>English Language</li>
+      <li>Mathematics</li>
+      <li>Shona or Ndebele (Mother tongue language)</li>
+      <li>Environmental Science</li>
+      <li>Religious and Moral Education</li>
+      <li>Physical Education</li>
+      <li>Arts and Crafts</li>
+      <li>Music</li>
+    </ul>
+
+    <img src="https://media.istockphoto.com/id/534576365/photo/elementary-school-children-wearing-blue-school-uniforms-raising-hands-in-classroom.jpg?s=612x612&w=0&k=20&c=LEdI0qaduUMsCWw32y0OASviPJvo8vrE1hYSE0GBEX8=" 
+         alt="Primary school students in Zimbabwe" 
+         class="rounded-lg shadow-lg mb-10 mx-auto max-w-4xl" />
+
+    <!-- Secondary School Subjects -->
+    <h3 class="text-2xl font-semibold text-blue-800 mb-4">Secondary School (Forms 1-6)</h3>
+    <p class="mb-6 max-w-4xl text-gray-700">
+      Our secondary school curriculum supports both ZIMSEC O-level and A-level subjects including:
+    </p>
+    <ul class="list-disc list-inside max-w-4xl mb-8 text-gray-700">
+      <li>English Language and Literature</li>
+      <li>Mathematics</li>
+      <li>Biology</li>
+      <li>Chemistry</li>
+      <li>Physics</li>
+      <li>Geography</li>
+      <li>History</li>
+      <li>Accounts and Business Studies</li>
+      <li>Information Communication Technology (ICT)</li>
+      <li>Shona / Ndebele Languages</li>
+      <li>Art and Design</li>
+      <li>Physical Education</li>
+    </ul>
+
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEBxWbDgu3pIProVkkiZFpqPAYa7KeURgP6Q&s" 
+         alt="Secondary school students in Zimbabwe" 
+         class="rounded-lg shadow-lg mb-10 mx-auto max-w-4xl" />
+
+    <p class="max-w-4xl text-gray-700">
+      Each program is designed with continuous assessment and exam preparation to support successful entry into tertiary education and employment. Our dedicated faculty ensure each student receives personalized support.
+    </p>
+  </div>
+</section>
+
+
+<section id="admissions" aria-label="Apply for Admission" class="py-12 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-blue-900 mb-6 border-b-4 border-yellow-400 inline-block pb-1">Admissions</h2>
+    <p class="max-w-4xl text-gray-700 mb-8">
+      Join the Light House family! Complete the form below to apply for admission and kickstart your educational journey.
+    </p>
+    <form id="admissionForm" class="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-8 border border-gray-200" novalidate>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <div>
+          <label for="firstName" class="block text-sm font-semibold mb-1">First Name<span class="text-red-600">*</span></label>
+          <input type="text" id="firstName" name="firstName" placeholder="John" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        </div>
+
+        <div>
+          <label for="lastName" class="block text-sm font-semibold mb-1">Last Name<span class="text-red-600">*</span></label>
+          <input type="text" id="lastName" name="lastName" placeholder="Doe" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        </div>
+
+        <div>
+          <label for="DOB" class="block text-sm font-semibold mb-1">Date Of Birth<span class="text-red-600">*</span></label>
+          <input type="date" id="DOB" name="DOB" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        </div>
+
+        <div>
+          <label for="email" class="block text-sm font-semibold mb-1">Email Address<span class="text-red-600">*</span></label>
+          <input type="email" id="email" name="email" placeholder="john.doe@example.com" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        </div>
+
+        <div>
+          <label for="phone" class="block text-sm font-semibold mb-1">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+263 712 345 678" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        </div>
+
+        <div class="md:col-span-2">
+          <label class="block text-sm font-semibold mb-1">Are you applying for Primary or Secondary Education?<span class="text-red-600">*</span></label>
+          <div class="flex space-x-6">
+            <label class="inline-flex items-center">
+              <input type="radio" name="educationLevel" value="primary" required class="form-radio text-blue-600" /> 
+              <span class="ml-2">Primary (Grade 1-7)</span>
+            </label>
+            <label class="inline-flex items-center">
+              <input type="radio" name="educationLevel" value="secondary" required class="form-radio text-blue-600" /> 
+              <span class="ml-2">Secondary (Form 1-6)</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="md:col-span-2">
+          <label for="gradeForm" class="block text-sm font-semibold mb-1">Select Grade or Form You Want to Enroll In<span class="text-red-600">*</span></label>
+          <select id="gradeForm" name="gradeForm" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" disabled>
+            <!-- Options to be populated dynamically by JS -->
+          </select>
+        </div>
+
+        <div class="md:col-span-2">
+          <label for="program" class="block text-sm font-semibold mb-1">Program Applying For<span class="text-red-600">*</span></label>
+          <select id="program" name="program" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <option value="" disabled selected>Select a program</option>
+            <option value="undergrad">Undergraduate Studies</option>
+            <option value="graduate">Graduate Studies</option>
+            <option value="professional">Professional Development</option>
+            <option value="online">Online Learning</option>
+          </select>
+        </div>
+
+        <div class="md:col-span-2">
+          <label for="message" class="block text-sm font-semibold mb-1">Additional Information</label>
+          <textarea id="message" name="message" rows="4" placeholder="Tell us anything you'd like to share..." class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+        </div>
+      </div>
+
+      <div class="mt-8 text-center">
+        <button type="submit" class="bg-blue-900 hover:bg-blue-800 focus:ring-4 focus:ring-blue-600 text-white font-semibold px-12 py-3 rounded shadow-md transition">Submit Application</button>
+      </div>
+
+      <p id="formMessage" class="mt-4 text-sm font-medium text-center text-green-700 hidden" role="alert"></p>
+    </form>
+  </div>
+
+  <script>
+    // JS to handle enabling grade/form select based on education level choose
+    const educationRadios = document.querySelectorAll('input[name="educationLevel"]');
+    const gradeFormSelect = document.getElementById('gradeForm');
+
+    const primaryGrades = [
+      { val: 'grade1', text: 'Grade 1' },
+      { val: 'grade2', text: 'Grade 2' },
+      { val: 'grade3', text: 'Grade 3' },
+      { val: 'grade4', text: 'Grade 4' },
+      { val: 'grade5', text: 'Grade 5' },
+      { val: 'grade6', text: 'Grade 6' },
+      { val: 'grade7', text: 'Grade 7' }
+    ];
+
+    const secondaryForms = [
+      { val: 'form1', text: 'Form 1' },
+      { val: 'form2', text: 'Form 2' },
+      { val: 'form3', text: 'Form 3' },
+      { val: 'form4', text: 'Form 4' },
+      { val: 'form5', text: 'Form 5' },
+      { val: 'form6', text: 'Form 6' }
+    ];
+
+    educationRadios.forEach(radio => {
+      radio.addEventListener('change', e => {
+        gradeFormSelect.disabled = false;
+        gradeFormSelect.innerHTML = '<option value="" disabled selected>Select a grade/form</option>';
+        let options = [];
+
+        if (e.target.value === 'primary') options = primaryGrades;
+        else if (e.target.value === 'secondary') options = secondaryForms;
+
+        options.forEach(opt => {
+          const option = document.createElement('option');
+          option.value = opt.val;
+          option.textContent = opt.text;
+          gradeFormSelect.appendChild(option);
+        });
+      });
+    });
+  </script>
+</section>
+
+
+  <!-- Online Library Section -->
+  <section id="online-library" aria-label="Online Library Access">
+    <h2 class="text-3xl font-bold text-blue-900 mb-6 border-b-4 border-yellow-400 inline-block pb-1">Online Library</h2>
+    <div class="max-w-5xl mx-auto">
+      <iframe title="Online Library Portal" src="https://archive.org/embed/queen-islands-collections?embedded=true&autoplay=false" aria-label="Online library embedded portal" class="w-full h-96 rounded-lg shadow-lg border border-gray-200" loading="lazy" ></iframe>
+      <p class="mt-4 text-center text-gray-600 italic text-sm select-none">Explore thousands of free educational resources, books, and papers via our Online Library</p>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" aria-label="Gallery of Light House Institute">
+    <h2 class="text-3xl font-bold text-blue-900 mb-6 border-b-4 border-yellow-400 inline-block pb-1">
+      Photo Gallery
+    </h2>
+    <div class="gallery-slider flex space-x-6 overflow-x-auto scroll-smooth snap-x snap-mandatory px-4 py-4">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=90" alt="Students collaborating outdoors" class="flex-shrink-0 w-64 h-40 rounded-lg object-cover shadow-lg snap-center hover:scale-105 transition transform duration-300 cursor-pointer" tabindex="0" />
+      <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=600&q=90" alt="Modern classrooms with tech" class="flex-shrink-0 w-64 h-40 rounded-lg object-cover shadow-lg snap-center hover:scale-105 transition transform duration-300 cursor-pointer" tabindex="0" />
+      <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=600&q=90" alt="Graduates tossing hats" class="flex-shrink-0 w-64 h-40 rounded-lg object-cover shadow-lg snap-center hover:scale-105 transition transform duration-300 cursor-pointer" tabindex="0" />
+      <img src="https://images.unsplash.com/photo-1466458520541-c29b6f9f9b93?auto=format&fit=crop&w=600&q=90" alt="Students studying in modern library" class="flex-shrink-0 w-64 h-40 rounded-lg object-cover shadow-lg snap-center hover:scale-105 transition transform duration-300 cursor-pointer" tabindex="0" />
+      <img src="https://images.unsplash.com/photo-1509228627152-c8b4b7901f96?auto=format&fit=crop&w=600&q=90" alt="Sports ground with students" class="flex-shrink-0 w-64 h-40 rounded-lg object-cover shadow-lg snap-center hover:scale-105 transition transform duration-300 cursor-pointer" tabindex="0" />
+    </div>
+  </section>
+
+  <!-- Portals Section -->
+  <section id="portals" aria-label="Parent and Student Portals">
+    <h2 class="text-3xl font-bold text-blue-900 mb-6 border-b-4 border-yellow-400 inline-block pb-1">Portals</h2>
+    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+      <a href="#" class="portal-card p-8 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition focus:outline-none focus:ring-4 focus:ring-blue-500" tabindex="0" aria-label="Parent portal login link">
+        <h3 class="text-2xl font-semibold text-blue-900 mb-4">Parent Portal</h3>
+        <p class="text-gray-700 leading-relaxed">Access your child’s attendance, grades, and school notices through our secure Parent Portal.</p>
+        <button class="mt-6 px-6 py-3 bg-yellow-500 text-blue-900 font-semibold rounded hover:bg-yellow-400 focus:ring-2 focus:ring-yellow-300" type="button">Login</button>
+      </a>
+      <a href="#" class="portal-card p-8 bg-white rounded-lg shadow-md border border-gray-200 hover:shadow-lg transition focus:outline-none focus:ring-4 focus:ring-blue-500" tabindex="0" aria-label="Student portal login link">
+        <h3 class="text-2xl font-semibold text-blue-900 mb-4">Student Portal</h3>
+        <p class="text-gray-700 leading-relaxed">Students can view their coursework, submit assignments, and keep updated via the Student Portal.</p>
+        <button class="mt-6 px-6 py-3 bg-yellow-500 text-blue-900 font-semibold rounded hover:bg-yellow-400 focus:ring-2 focus:ring-yellow-300" type="button">Login</button>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" aria-label="Contact Light House Institute">
+    <h2 class="text-3xl font-bold text-blue-900 mb-6 border-b-4 border-yellow-400 inline-block pb-1">Contact Us</h2>
+    <p class="max-w-4xl mx-auto mb-8 text-gray-700">
+      Have any questions? Reach out and we’ll be glad to assist you.
+    </p>
+
+    <form id="contactForm" class="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-8 border border-gray-200" novalidate>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label for="contactName" class="block text-sm font-semibold mb-1">Full Name<span class="text-red-600">*</span></label>
+          <input type="text" id="contactName" name="contactName" placeholder="Your name" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        </div>
+        <div>
+          <label for="contactEmail" class="block text-sm font-semibold mb-1">Email Address<span class="text-red-600">*</span></label>
+          <input type="email" id="contactEmail" name="contactEmail" placeholder="your.email@example.com" required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        </div>
+        <div class="md:col-span-2">
+          <label for="contactMessage" class="block text-sm font-semibold mb-1">Message<span class="text-red-600">*</span></label>
+          <textarea id="contactMessage" name="contactMessage" rows="4" placeholder="Write your message here..." required class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+        </div>
+      </div>
+      <div class="mt-8 text-center">
+        <button type="submit" class="bg-blue-900 hover:bg-blue-800 focus:ring-4 focus:ring-blue-600 text-white font-semibold px-12 py-3 rounded shadow-md transition">
+          Send Message
+        </button>
+      </div>
+      <p id="contactFormMessage" class="mt-4 text-sm font-medium text-center text-green-700 hidden" role="alert"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="bg-white border-t border-gray-200 text-gray-600 text-center py-6 mt-20 select-none">
+  &copy; 2025 Light House Institute. All rights reserved.
+</footer>
+
+<script>
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  menuBtn.addEventListener('click', () => {
+    const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+    if(expanded){
+      mobileMenu.classList.add('hidden');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    } else {
+      mobileMenu.classList.remove('hidden');
+      menuBtn.setAttribute('aria-expanded', 'true');
+    }
+  });
+
+  // Admission form submission simulation
+  const admissionForm = document.getElementById('admissionForm');
+  admissionForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const formMessage = admissionForm.querySelector('#formMessage');
+    if(!admissionForm.checkValidity()){
+      admissionForm.reportValidity();
+      return;
+    }
+    formMessage.textContent = 'Submitting your application...';
+    formMessage.classList.remove('hidden');
+    setTimeout(() => {
+      formMessage.textContent = 'Thank you for applying! We will review your application and contact you soon.';
+      admissionForm.reset();
+    }, 1500);
+  });
+
+  // Contact form submission simulation
+  const contactForm = document.getElementById('contactForm');
+  contactForm.addEventListener('submit', e => {
+    e.preventDefault();
+    const messageEl = document.getElementById('contactFormMessage');
+    if(!contactForm.checkValidity()){
+      contactForm.reportValidity();
+      return;
+    }
+    messageEl.classList.remove('hidden');
+    messageEl.textContent = 'Sending your message...';
+    setTimeout(() => {
+      messageEl.textContent = 'Message sent successfully! We will get back to you shortly.';
+      contactForm.reset();
+    }, 1500);
+  });
+</script>
+
+</body>
+</html>
